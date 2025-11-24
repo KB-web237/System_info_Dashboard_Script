@@ -3,7 +3,7 @@ echo "----------------System Information---------------------"
  user_name=$(whoami) 
 echo "User: ${user_name^^}"
 echo "Hostname: $(hostname)"
-echo "Current date/time: $(date date +"%a %b %e %H:%M:%S")"
+echo "Current date/time: $(date '+%a %b %e %H:%M:%S')"
 echo "------------------Uptime Information---------------------"
 echo "Full uptime string : $(uptime -p | sed 's/^up //')"
 echo "----------Memory Usage info(GB)----------------------------"
