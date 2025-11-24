@@ -1,16 +1,17 @@
 #!/bin/bash
 echo "----------------System Information---------------------"
  user_name=$(whoami) 
-echo "Current User: ${user_name^^}"
+echo "User: ${user_name^^}"
 echo "Hostname: $(hostname)"
-echo "Current date/time: $(date)"
+echo "Current date/time: $(date date +"%a %b %e %H:%M:%S")"
+echo "------------------Uptime Information---------------------"
 echo "Full uptime string : $(uptime -p | sed 's/^up //')"
-echo "----------Memory Usage info----------------------------"
+echo "----------Memory Usage info(GB)----------------------------"
 echo "Total Memory: $(free -h | grep Mem: | awk '{print $2}')"
 echo "Used Memory: $(free -h | grep Mem: | awk '{print $3}')"
 echo "Free Memory: $(free -h | grep Mem: | awk '{print $4}')"
 
-echo "----------Disk Usage info----------------------------"
+echo "----------Disk Usage info(GB)----------------------------"
 #df  -h --total | grep 'total' | awk '{print "Total Disk space: "$2"\nUsed Disk space: "$3"\nFree Disk space: "$4}'
 echo "Total Disk space: $(df -h --total | grep 'total' | awk '{print $2}')"
 echo "Used Disk space: $(df -h --total | grep 'total' | awk '{print $3}')"
