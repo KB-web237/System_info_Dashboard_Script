@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Current User: $(whoami | tr 'a-z' 'A-Z')"
+echo "----------------System Information---------------------"
+ user_name=$(whoami) 
+echo "Current User: ${user_name^^}"
 echo "Hostname: $(hostname)"
 echo "Current date/time: $(date)"
 echo "Full uptime string : $(uptime -p | sed 's/^up //')"
