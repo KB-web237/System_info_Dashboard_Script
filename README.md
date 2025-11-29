@@ -22,15 +22,15 @@ Run it:
 ``` bash
 ./sysinfo.sh
 ```
- ## File
- - **sysinfo.sh** --The main script\
- ## Commands Used in the Program
- - whoami
- - hostname
- - date
- - uptime -p
- - df -h --total
- - ps aux, awk, grep, sed
+## File
+- **sysinfo.sh** --The main script\
+## Commands Used in the Program
+- whoami
+- hostname
+- date
+- uptime -p
+- df -h --total
+- ps aux, awk, grep, sed
 
 ## Requirements to Run it
 - Bash shell\
