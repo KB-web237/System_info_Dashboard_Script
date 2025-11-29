@@ -22,6 +22,10 @@ Run it:
 ``` bash
 ./sysinfo.sh
 ```
+## Example Output(screenshot)
+![Terminal Output](images/terminal_output.png)
+
+*Output of system_info.sh showing user(KB), Host, memory, disk uptime information for my PC.*
 ## File
 - **sysinfo.sh** --The main script\
 ## Commands Used in the Program
