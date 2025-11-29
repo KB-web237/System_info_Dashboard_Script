@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "----------------System Information---------------------"
- user_name=$(whoami) 
+user_name=$(whoami)
 echo "User: ${user_name^^}"
 echo "Hostname: $(hostname)"
 echo "Current date/time: $(date '+%a %b %e %H:%M:%S')"
