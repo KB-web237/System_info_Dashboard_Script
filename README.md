@@ -6,8 +6,8 @@ This Bash displays detailed **system information**, including user details, upti
 - Displays hostname
 - Prints current date and time
 - Shows system uptime
-- Reports memory usage in GB (total, used, free)
-- Reports disk usage in GB (total, used, free)
+- Reports memory usage in MB (total, used, free)
+- Reports disk usage in MB (total, used, free)
 - Lists total running processes
 - Shows top 5 memory-consuming processes
 
@@ -29,7 +29,7 @@ Run it:
 - hostname
 - date
 - uptime -p
-- df -h --total
+- df -m --total
 - ps aux, awk, grep, sed
 
 ## Requirements to Run it
